@@ -1,54 +1,52 @@
 ---
 title: Welcome to LEIP
-sticker: ""
 tags:
   - home
+custom-width: .nan
 ---
-Hello! Welcome to the Latent AI Edge Inference Platform (LEIP).
-
-
-To keep things simple, LEIP is broken down into 3 products. You can use each of these products based on what tools you need to deploy your Machine Learning (ML) model.
-
-1. Design
-
-2. Optimize
-
-3. Deploy
-
-  
-  
-
-# Basic Knowledge
-
-  [[Untitled]]
-
-[[Getting Started Demo Docs]]
-
-  
-
-> [!NOTE]  
-> Hello
-  
-
 > [!TIP]
-> > Optional information to help a user be more successful. 
+> Reading this page entirely from top to bottom is recommended. 
 
-> [!IMPORTANT]  
+Hello! Welcome to the [[Latent AI Edge Inference Platform (LEIP)]].
 
-> Crucial information necessary for users to succeed.
+This home page will serve to help you intuitively understand how to navigate and leverage LEIP to rapidly create highly performant AI models.
 
-  
+# Before You Begin...
+To keep things simple, [[LEIP]] is broken down into 3 products. You can use each of these products based on what tools you need to deploy your Machine Learning (ML) model.
 
-> [!WARNING]  
+1. [[Design]]
+	* Easily create and train an ML model by [[Glossary#Bring Your Own Data (BYOD)|Bringing Your Own Data (BYOD)]]. This can be done by selecting from our curated [[Golden Recipes]], or create a recipe through [[Recipe Designer]].
+2. [[Optimize]]
+	* Easily apply software and hardware optimizations to your model for a chosen hardware deployment. No  specific hardware optimization knowledge is needed.
+	* Users can take advantage of [[LEIP Optimize]] whether they created a model from [[LEIP Design]], or if they have created one outside of [[LEIP]] (this path is also known as [[Bring Your Own Model (BYOM)]]).
+3. [[Deploy]]
+	* Install our [[Latent Runtime Engine (LRE)]] to manage and run your models created from [[LEIP Optimize]].
+	* Utilize [[LRE Services]] to enable your model to report metrics and enhance security.
+# Getting Started: Identifying Your Path
+There are 2 paths to enter into LEIP. Your path will depend on which LEIP Products you will use to create your AI solution. The steps for each path are listed in order below.
 
-> Critical content demanding immediate user attention due to potential risks.
+If you're more of a visual person, [click this graph]() to see a high level overview of the paths.
+## [[Glossary#Bring Your Own Data (BYOD)|Bringing Your Own Data (BYOD)]]
+1. Pre-requisites
+	* A labeled dataset in COCO or PASCAL VOC format.
+	* Don't know how to create a labeled dataset? Click [[here]].
+3. [[Design]]
+	* Create and train a model here, with the end result being a trained (and traced PyTorch) model.
+4. [[Optimize]]
+	* Use the trained model from [[Design]] in the optimization phase to quantize and target deployment hardware of your choosing.
+5. [[Deploy]]
+	* Install our [[Latent Runtime Engine (LRE)]] to manage and run your models created from [[LEIP Optimize]].
+## [[Bring Your Own Model (BYOM)]]
+1. Pre-requisites
+	* A trained model from a popular ML framework (e.g., TensorFlow, Keras, PyTorch, etc.).
+2. [[Optimize]]
+	* Use your trained model in the optimization phase to quantize and target deployment hardware of your choosing.
+3. [[Deploy]]
+	* Install our [[Latent Runtime Engine (LRE)]] to manage and run your models created from [[LEIP Optimize]].
+# Installing LEIP
+Once you've identified your LEIP path, it's time to install LEIP. Refer to [[Installation]].
 
->
-
-  
-
-> [!CAUTION]
-
-> Negative potential consequences of an action.
-
-[[Getting Started Demo Docs]]
+Once installed, you can browse and use our tutorials below.
+# Tutorials
+Tutorials will be labeled with #BYOM or #BYOD depending on which path you choose.
+* [[Getting Started with BYOD to Deployment]]

@@ -3,6 +3,7 @@ title:
 tags:
   - getting-started
   - tutorials
+custom-width: .nan
 ---
 # Getting Started with LEIP3
 
