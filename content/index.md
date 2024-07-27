@@ -43,10 +43,19 @@ If you're more of a visual person, [click this graph]() to see a high level over
 	* Use your trained model in the optimization phase to quantize and target deployment hardware of your choosing.
 3. [[Deploy]]
 	* Install our [[Latent Runtime Engine (LRE)]] to manage and run your models created from [[LEIP Optimize]].
-# Installing LEIP
-Once you've identified your LEIP path, it's time to install LEIP. Refer to [[Installation]].
+# Installing LEIP SDK & LRE
+> [!NOTE]  
+> The LEIP SDK consists of [[Optimize]] and [[Deploy]]. This is installed on your _development_ machine.
+> 
+> For deployment, you will install the [[Latent Runtime Engine (LRE)|LRE]] on your _deployment hardware_. The LRE is responsible for running the optimized model created from the SDK.
 
-Once installed, you can browse and use our tutorials below.
+Once you've identified your LEIP path, check to see if you have all the prerequisites to run LEIP by visiting [[Installing Prerequisites]].
+
+Once you have satisfied all prerequisites, refer to [[Installing LEIP SDK]].
+
+After installation, you can browse and use our [[#Tutorials|tutorials]] below.
+
+Once you have a model you're ready to deploy with, you can reference [[Installing LRE]] to install the runtime and deploy your model on your target hardware.
 # Tutorials
 Tutorials will be labeled with #BYOM or #BYOD depending on which path you choose.
 * [[Getting Started with BYOD to Deployment]]
