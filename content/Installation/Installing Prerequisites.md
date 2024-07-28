@@ -124,7 +124,7 @@ The easiest test to verify if you have GPU access in a Docker container is by ru
 ```
 docker run --gpus all nvcr.io/nvidia/k8s/cuda-sample:nbody nbody -gpu -benchmark
 ```
-### Successful Output
+### Successful Output (Step 4)
 ```
 Run "nbody -benchmark [-numbodies=<numBodies>]" to measure performance.
         -fullscreen       (run n-body simulation in fullscreen mode)
