@@ -8,15 +8,14 @@ custom-width: .nan
 # Prerequisites
 
 > [!WARNING] Warning
-> For Windows users, WSL2 is needed to run LEIP SDK. We currently do not support native Windows.
+> For Windows users, WSL2 is needed to run [[What is LEIP?|LEIP SDK]]. We currently do not support native Windows.
 
-As a general supportability statement, any OS that has Docker installed with access to a CUDA-enabled GPU can utilize LEIP SDK.
+As a general supportability statement, any OS that has Docker installed with access to a CUDA-enabled GPU can utilize [[What is LEIP?|LEIP SDK]].
 
 For our testing, we have used:
 * Linux-based system (Ubuntu 20.04 or 22.04)  
 * NVIDIA GPU (from CUDA 10 to CUDA 12).  
 * Docker 1.19 or greater
-
 ## Useful Prerequisite Links
 ### Ubuntu
 * [Create an Ubuntu Installation USB & Install Ubuntu](https://ubuntu.com/tutorials/create-a-usb-stick-on-windows/#1-overview)
@@ -75,13 +74,16 @@ Tue Jun 18 09:18:44 2024
 > [!WARNING]  Skip this section if...
 > If you are able to type `docker` in the terminal and return back [[#Successful Output (Step 2)|this output]], you have Docker installed.
 ## Ubuntu
-1. Refer to [this section of the Docker documentation ("Install using the apt repository")](https://docs.docker.com/engine/install/ubuntu/\#install-using-the-repository) to install Docker via `apt`.  
+1. Refer to [this link](https://docs.docker.com/engine/install/ubuntu/\#install-using-the-repository) (Install using the apt repository) to install Docker via `apt`.  
 1. Enable the GPU for usage inside Docker. To do this, install `nvidia-container-runtime` by following [this specific section](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html\#installing-with-apt) (“Installing with Apt”).  
 1. Now, we need to set Docker to leverage the NVIDIA runtime. Following **only the first two steps** [in this specific section (“Configuring Docker)](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html\#configuring-docker).  
-## WSL2
+## Other Linux Distros
+It is possible to run containers with other Docker alternatives, such as `containerd`, but installation is currently not supported by us.
+## Windows (WSL2)
 1. The easiest way to accomplish this is to [install Docker Desktop](https://docs.docker.com/desktop/install/windows-install/), which will enable Docker automatically with your NVIDIA GPU.
 
 ## Successful Output (Step 2)
+
 > [!TIP] Tip
 > If you cannot use `docker` without `sudo`, [follow these instructions](https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user) (Manage Docker as a non-root user) and restart your computer to allow your `user` to use `docker` without `sudo` privileges.
 
