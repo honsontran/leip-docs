@@ -4,7 +4,7 @@ tags:
   - home
 custom-width: .nan
 ---
-> [!TIP]
+> [!TIP] Tip
 > Reading this page entirely from top to bottom is recommended. 
 
 Hello! Welcome to the [[Latent AI Edge Inference Platform (LEIP)]].
@@ -44,7 +44,7 @@ If you're more of a visual person, [click this graph]() to see a high level over
 3. [[Deploy]]
 	* Install our [[Latent Runtime Engine (LRE)]] to manage and run your models created from [[LEIP Optimize]].
 # Installing LEIP SDK & LRE
-> [!NOTE]  
+> [!NOTE]  Note
 > The LEIP SDK consists of [[Optimize]] and [[Deploy]]. This is installed on your _development_ machine.
 > 
 > For deployment, you will install the [[Latent Runtime Engine (LRE)|LRE]] on your _deployment hardware_. The LRE is responsible for running the optimized model created from the SDK.
