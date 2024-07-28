@@ -45,7 +45,7 @@ If you're more of a visual person, [click this graph]() to see a high level over
 3. [[Deploy]]
 	* Install our [[Latent Runtime Engine (LRE)]] to manage and run your models created from [[LEIP Optimize]].
 # Installing LEIP SDK & LRE
-[[]]
+
 > [!NOTE]  Note
 > The LEIP SDK consists of [[Optimize]] and [[Deploy]]. This is installed on your _development_ machine.
 > 
