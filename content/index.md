@@ -9,11 +9,11 @@ custom-width: .nan
 
 Hello! Welcome to the [[Latent AI Edge Inference Platform (LEIP)]].
 
-This home page will serve to help you intuitively understand how to navigate and leverage [[What is LEIP?|LEIP]] to rapidly create highly performant AI models for the [[edge continuum]].
+This home page will serve to help you intuitively understand how to navigate and leverage [[What is LEIP?|LEIP]] to rapidly create highly performant AI [[models]] for the [[edge continuum]].
 
 If you would like to schedule an evaluation of [[What is LEIP?|LEIP]], please contact us at support@latentai.com.
 # Before You Begin...
-To keep things simple, [[LEIP]] is broken down into 3 products. You can use each of these products based on what tools you need to deploy your Machine Learning (ML) model.
+To keep things simple, [[LEIP]] is broken down into 3 products. You can use each of these products based on what tools you need to deploy your [[Machine Learning (ML) ]]model.
 
 1. [[Design]]
 	* Easily create and train an ML model by [[Glossary#Bring Your Own Data (BYOD)|Bringing Your Own Data (BYOD)]]. This can be done by selecting from our curated [[Golden Recipes]], or create a recipe through [[Recipe Designer]].
