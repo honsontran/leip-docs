@@ -16,7 +16,7 @@ If you would like to schedule an evaluation of [[What is LEIP?|LEIP]], please co
 To keep things simple, [[LEIP]] is broken down into 3 products. You can use each of these products based on what tools you need to deploy your [[Machine Learning (ML) ]]model.
 
 1. [[Design]]
-	* Easily create and train an ML model by [[Glossary#Bring Your Own Data (BYOD)|Bringing Your Own Data (BYOD)]]. This can be done by selecting from our curated [[Golden Recipes]], or create a recipe through [[Recipe Designer]].
+	* Easily create and train an [[ML]] model by [[Glossary#Bring Your Own Data (BYOD)|Bringing Your Own Data (BYOD)]]. This can be done by selecting from our curated [[Golden Recipes]], or create a [[Glossary#Recipe|recipe]] through [[Recipe Designer]].
 2. [[Optimize]]
 	* Easily apply software and hardware optimizations to your model for a chosen hardware deployment. No specific hardware optimization knowledge is needed.
 	* Users can take advantage of [[LEIP Optimize]] whether they created a model from [[LEIP Design]], or if they have created one outside of [[LEIP]] (this path is also known as [[Bring Your Own Model (BYOM)]]).
