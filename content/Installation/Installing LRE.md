@@ -47,4 +47,23 @@ Proceed with installation on your edge device by opening up a terminal session a
 	pip install --extra-index-url=https://$REPOSITORY_TOKEN_NAME:$REPOSITORY_TOKEN_PASS@repository.latentai.com/repository/pypi/simple pylre[liblre]
 	```
 # Step 3: A Simple [[PyLRE]] Test
-You can do a simple [[PyLRE]] test
+You can do a simple [[PyLRE]] test with the model to confirm the model binary can perform inference:
+```python
+import numpy as np
+import torch as T
+
+from pylre import LatentRuntimeEngine
+from pathlib import Path
+
+
+# Load runtime
+lre = LatentRuntimeEngine("modelLibrary.so")
+lre.set_model_precision("int8")
+print(lre.get_metadata())
+
+# Call runtime
+input_data = np.asarray(np.random.rand(1,3,512,512)).astype(np.float32)
+outputs = lre.infer(input_data)
+output_torch = T.from_dlpack(lre.get_outputs()[0])
+print(output_torch)
+```
