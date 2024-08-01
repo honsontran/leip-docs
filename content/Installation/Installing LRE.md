@@ -13,8 +13,7 @@ Before installation, ensure your device is supported. You can reference our [[La
 > [!TIP] Tip  
 > You can make `LICENSE_KEY` and `LEIP_WORKSPACE` persist for every new `bash` session by placing the variables in `~/.bashrc`.
 
-In order to install packages, you'll need to create a personal access token. To do so, follow these steps:
-
+In order to install packages, you'll need to obtain your personal access token. To do so, follow these steps:
 1. Login to [Latent AI Artifact repository](https://repository.latentai.com/)
     - Click the `Sign-in` link in the upper right
     - Select `Sign-in with SSO`

@@ -9,7 +9,7 @@ custom-width: .nan
 ---
 > [!NOTE]  Note
 > If you would like to schedule an evaluation of LEIP, please contact us at [support@latentai.com](mailto:support@latentai.com.)
-# Step 1: Get Access to Latent AI Packages
+# Step 1: Get Access to our Container Repository
 
 > [!WARNING]  Skip this step if...
 > You only need the user token if you are installing any Latent AI specific Python packages, such as the [[Latent Runtime Engine (LRE)]]. If you are installing entirely with Docker, use the `LICENSE_KEY` found in your email.
@@ -53,9 +53,11 @@ Regardless of your installation method, make sure you configure the following:
 	export LICENSE_KEY=key/<license_key>
 	export LEIP_WORKSPACE=/path/to/leip-tutorials/notebooks
 	```
-3. Login to our Docker repository.
+3. Login to our Docker repository. Then use the user credentials obtained from [[Installing LEIP SDK#Step 1 Get Access to our Container Repository]].
 	```bash
-	docker login repository.latentai.com
+	$ docker login repository.latentai.com
+	Username: $REPOSITORY_TOKEN_NAME
+	Password: $REPOSITORY_TOKEN_PASS
 	```
 ### Method 1: Entirely Docker
 The *easiest* way to install the LEIP SDK is by using `docker compose` to initialize both [[Design|LEIP Design]] and [[Optimize|LEIP Optimize]].
