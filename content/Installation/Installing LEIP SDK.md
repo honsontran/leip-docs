@@ -10,11 +10,7 @@ custom-width: .nan
 > [!NOTE]  Note
 > If you would like to schedule an evaluation of LEIP, please contact us at [support@latentai.com](mailto:support@latentai.com.)
 # Step 1: Get Access to our Container Repository
-
-> [!WARNING]  Skip this step if...
-> You only need the user token if you are installing any Latent AI specific Python packages, such as the [[Latent Runtime Engine (LRE)]]. If you are installing entirely with Docker, use the `LICENSE_KEY` found in your email.
-
-In order to install packages, you'll need to create a personal access token. To do so, follow these steps:
+In order to install packages or pull any of our Docker images, you'll need to create a personal access token. To do so, follow these steps:
 
 1. Login to [Latent AI Artifact repository](https://repository.latentai.com/)
     - Click the `Sign-in` link in the upper right
