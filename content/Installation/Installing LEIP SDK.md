@@ -9,9 +9,8 @@ custom-width: .nan
 ---
 > [!NOTE]  Note
 > If you would like to schedule an evaluation of LEIP, please contact us at [support@latentai.com](mailto:support@latentai.com.)
-# Step 1: Get Access to our Container Repository
+# Step 1: Access our Container Repository
 In order to install packages or pull any of our Docker images, you'll need to create a personal access token. To do so, follow these steps:
-
 1. Login to [Latent AI Artifact repository](https://repository.latentai.com/)
     - Click the `Sign-in` link in the upper right
     - Select `Sign-in with SSO`
@@ -49,7 +48,7 @@ Regardless of your installation method, make sure you configure the following:
 	export LICENSE_KEY=key/<license_key>
 	export LEIP_WORKSPACE=/path/to/leip-tutorials/notebooks
 	```
-3. Login to our Docker repository. Then use the user credentials obtained from [[Installing LEIP SDK#Step 1 Get Access to our Container Repository]].
+3. Login to our Docker repository. Then use the user credentials obtained from [[Installing LEIP SDK#Step 1 Access our Container Repository]]. You'll have to manually copy and paste the variables listed below.
 	```bash
 	$ docker login repository.latentai.com
 	Username: $REPOSITORY_TOKEN_NAME
