@@ -14,15 +14,15 @@ Before installation, ensure your device is supported. You can reference our [[La
 > You can make `LICENSE_KEY` and `LEIP_WORKSPACE` persist for every new `bash` session by placing the variables in `~/.bashrc`.
 
 In order to install packages or pull any of our Docker images, you'll need to create a personal access token. To do so, follow these steps:
-1. Login to [Latent AI Artifact repository](https://repository.latentai.com/)
-    - Click the `Sign-in` link in the upper right
-    - Select `Sign-in with SSO`
-    - Enter your access credentials
-2. Create your Personal Access Token
-    - Click on your profile in the upper right
-    - Select `User Token` on the left navigation
-    - Select the `Access User Token` button
-    - View your user token name and user token passcode
+1. Login to [Latent AI Artifact repository](https://repository.latentai.com/).
+    - Click the `Sign-in` link in the upper right.
+    - Select `Sign-in with SSO`.
+    - Enter your access credentials.
+2. Create your Personal Access Token.
+    - Click on your profile in the upper right.
+    - Select `User Token` on the left navigation.
+    - Select the `Access User Token` button.
+    - View your user token name and user token passcode.
 3. Export your user token name and passcode.
 	```bash
 	REPOSITORY_TOKEN_NAME=<token_name>

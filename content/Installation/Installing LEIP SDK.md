@@ -5,21 +5,21 @@ tags:
   - tutorials
   - optimize
   - design
-custom-width: .nan
+custom-width: 100
 ---
 > [!NOTE]  Note
 > If you would like to schedule an evaluation of LEIP, please contact us at [support@latentai.com](mailto:support@latentai.com.)
 # Step 1: Access our Container Repository
 In order to install packages or pull any of our Docker images, you'll need to create a personal access token. To do so, follow these steps:
-1. Login to [Latent AI Artifact repository](https://repository.latentai.com/)
-    - Click the `Sign-in` link in the upper right
-    - Select `Sign-in with SSO`
-    - Enter your access credentials
-2. Create your Personal Access Token
-    - Click on your profile in the upper right
-    - Select `User Token` on the left navigation
-    - Select the `Access User Token` button
-    - View your user token name and user token passcode
+1. Login to [Latent AI Artifact repository](https://repository.latentai.com/).
+    - Click the `Sign-in` link in the upper right.
+    - Select `Sign-in with SSO`.
+    - Enter your access credentials.
+2. Create your Personal Access Token.
+    - Click on your profile in the upper right.
+    - Select `User Token` on the left navigation.
+    - Select the `Access User Token` button.
+    - View your user token name and user token passcode.
 3. Export your user token name and passcode.
 	```bash
 	REPOSITORY_TOKEN_NAME=<token_name>
@@ -59,7 +59,7 @@ The *easiest* way to install the LEIP SDK is by using `docker compose` to initia
 
 ```bash
 # Make sure you're in leip-tutorials/environment
-docker compose up leip-af leip-cf
+docker compose up -d leip-af leip-cf
 ```
 
 ### Method 2: Local Environment with LEIP Optimize
@@ -72,3 +72,20 @@ You can access this notebook in your browser via http://127.0.0.1:8888. The Jupy
 To get started with using LEIP, view our #tutorials .
 
 Once you have optimized your model and you're ready for deployment, refer to [[Installing LRE]].
+## (Optional) Use LEIP via SSH
+If you have deployed LEIP on a remote instance or server, you can tunnel the Jupyter instance back to your local machine with either method below.
+### Inline Terminal Command
+```bash
+ssh -L your_local_port:localhost:8888 user@ip_address
+```
+### Stored as an SSH Bookmark
+You can store these SSH settings in `~/.ssh/config`:
+```bash
+Host bookmark_name
+    User your_username
+    HostName ip_address_here
+    Port 22
+    LocalForward your_local_port 127.0.0.1:8888
+```
+
+Then, simply type in `ssh bookmark_name` to connect.
