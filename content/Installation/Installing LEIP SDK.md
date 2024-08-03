@@ -59,6 +59,7 @@ The *easiest* way to install the LEIP SDK is by using `docker compose` to initia
 
 ```bash
 # Make sure you're in leip-tutorials/environment
+# -d is to automatically detach from the container after initialzation
 docker compose up -d leip-af leip-cf
 ```
 
@@ -72,7 +73,11 @@ You can access this notebook in your browser via http://127.0.0.1:8888. The Jupy
 To get started with using LEIP, view our #tutorials .
 
 Once you have optimized your model and you're ready for deployment, refer to [[Installing LRE]].
-## (Optional) Use LEIP via SSH
+
+---
+# Additional Configurations
+These are additional configurations in the even the default instructions above need to be modified.
+## Use LEIP via SSH
 If you have deployed LEIP on a remote instance or server, you can tunnel the Jupyter instance back to your local machine with either method below.
 ### Inline Terminal Command
 ```bash
@@ -89,3 +94,55 @@ Host bookmark_name
 ```
 
 Then, simply type in `ssh bookmark_name` to connect.
+## Using Different Ports for [[What is LEIP?|LEIP]]
+
+> [!NOTE]  
+> If you are interacting with [[What is LEIP?|LEIP]] by sending commands from outside the Docker containers, use the port you defined in `CHANGE_LOCAL_PORT_TO_ACCESS_LEIP_CF` when a URL is required. However, if you are utilizing [[What is LEIP?|LEIP]] with our `docker compose` files, the containers are referencing the internal port `8888`.
+
+In the event you need to use different ports for [[What is LEIP?|LEIP]], make the following changes to the YAML file in `leip-tutorials/environment`.
+### `docker-compose.cpu.yml`
+```
+networks:
+	...
+
+volumes:
+	...
+
+services:
+	leip-cf:
+		...
+		...
+		ports:
+			- CHANGE_LOCAL_PORT_TO_ACCESS_LEIP_CF:8888
+		...
+
+	leip-af:
+		...
+		...
+		ports:
+			- CHANGE_LOCAL_PORT_TO_JUPYTER_NOTEBOOK:8888
+		...
+```
+## Changing the Docker Virtual Network Name for LEIP
+Change the network name in the following YAML file in `leip-tutorials/environment`.
+### `docker-compose.yml`
+```
+networks:
+  default:
+    name: CHANGE_NETWORK_NAME_HERE
+
+volumes:
+	...
+```
+## Spawning Multiple LEIP Instances
+In the event you need to have multiple LEIP instances on a single server, make sure to:
+* Change the ports mentioned in [[#Using Different Ports for LEIP]] to avoid port conflict with other [[What is LEIP?|LEIP]] instances during initialization.
+* Change the virtual network name in [[#Changing the Docker Virtual Network Name for LEIP]] to avoid network name conflicts during initialization.
+
+Once those steps are done, start an instance with the `-p` flag to add a prefix to the beginning of the container names. This will create create the containers needed with the prefix in front to avoid container name conflicts with other [[What is LEIP?|LEIP]] instances.
+
+```bash
+docker compose -p new_user up -d leip-af leip-cf
+```
+
+The command above will spawn containers named `new_user-leip-af` and `new_user-leip-cf`.

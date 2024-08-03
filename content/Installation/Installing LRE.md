@@ -31,7 +31,7 @@ In order to install packages or pull any of our Docker images, you'll need to cr
 # Step 2: Install [[Latent Runtime Engine (LRE)|LRE]] on Target Hardware
 
 > [!bug] Bug
-> There's a current issue with `pip install pylre[liblre]` installing `pylre==0.0.3`. You still need `pylre[liblre` regardless of this.
+> There's a current issue with `pip install pylre[liblre]` installing `pylre==0.0.3`. You still need `pylre[liblre]` regardless of this.
 > 
 > As a workaround, install `pylre[liblre]` first, then run `pip install pylre==1.0.0`.
 
